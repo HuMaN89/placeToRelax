@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: 'Montserrat Bold';
   src: url("../fonts/Montserrat-ExtraBold.eot");
@@ -145,14 +164,30 @@ body {
 }
 
 .hero_img {
+  position: relative;
   width: 470px;
   height: 775px;
   margin-left: 680px;
   margin-top: -650px;
 }
 
+.hero_arrow {
+  position: absolute;
+  left: 0;
+  top: 600px;
+}
+
 .title {
   padding-top: 180px;
   padding-left: 19%;
+}
+
+@media (max-width: 768px) {
+  .navbar__logo {
+    background: url(../img/Logo-575px.png);
+    width: 230px;
+    height: 25px;
+    background-size: contain;
+  }
 }
 /*# sourceMappingURL=style.css.map */
