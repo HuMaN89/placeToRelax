@@ -1,6 +1,10 @@
 body
     +montserratMedium
     color: $text-color
+    background-color: $text-color
+
+section
+    width: 100%
 
 .button-o
     padding: 11px 22px
@@ -15,5 +19,21 @@ body
 .navbar__button-1
     background-color: rgba(0,0,0,0)
     border: 1px solid rgba(#ffffff,.3)
+.help__button-1
+    display: block
+    position: relative
+    width: 300px
+    height: 60px
+    margin-top: -15px
+    margin-left: 33px
+    box-shadow: 0 0 15px rgba(34, 40, 49, 0.25)
+    z-index: 2
+
+@media (max-width: 968px) 
+    .navbar_button
+        display: none
 
     
+@media (max-width: 500px) 
+    .navbar_button
+        display: none
