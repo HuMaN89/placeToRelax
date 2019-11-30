@@ -1,0 +1,79 @@
+.info2
+    background-color: $text-color
+    &_box
+        display: flex
+        width: 100%
+        height: 567px
+        margin-bottom: 100px
+
+.programm_about
+    margin-top: 100px
+    margin-bottom: 15px
+    display: block
+    color: $btn-color
+    +montserratBold
+    font-size: 14px
+    text-transform: uppercase
+
+.programm
+    width: 594px
+    height: 536px
+    &_title
+        display: block
+        color: #222831
+        +montserratSemibold
+        font-size: 24px
+        width: 594px
+    &_text
+        display: block
+        width: 570px
+        height: 246px
+        color: #7a7e83
+        +openSansRegular
+        font-size: 16px
+        margin-top: 30px
+        line-height: 28px
+
+
+.programm img
+    margin-top: 60px
+
+.avtomation
+    position: relative
+    width: 490px
+    height: 530px
+    margin-left: 100px
+    &_title
+        display: block
+        color: #222831
+        +montserratSemibold
+        font-size: 20px
+        width: 594px
+    &_text
+        width: 470px
+        height: 480px
+        color: #7a7e83
+        +openSansRegular
+        margin-top: 30px
+        font-size: 16px
+        line-height: 28px
+        overflow-x: hidden
+        overflow-y: scroll
+
+    &_text p 
+        margin: 0
+    
+    &_gradient
+        position: absolute
+        width: 465px
+        height: 47px
+        margin-top: -45px
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $text-color 100%)
+
+.avtomation_text::-webkit-scrollbar
+    width: 5px
+.avtomation_text::-webkit-scrollbar-track
+    background: $background-color
+.avtomation_text::-webkit-scrollbar-thumb
+    background: $btn-color
+    border-radius: 25px
