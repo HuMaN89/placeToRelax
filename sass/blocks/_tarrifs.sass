@@ -1,0 +1,63 @@
+.tarrifs
+    background-color: $text-color
+    height: 720px
+    position: relative
+    
+    h3 
+        display: block
+        text-align: center
+        width: 780px
+        +montserratBold
+        font-size: 32px
+        color: #222831
+        margin: auto 
+        padding-top: 100px
+
+    &_compaire
+        position: absolute
+        +montserratBold
+        font-size: 20px
+        color: $btn-color
+        top: 110px
+        right: 0
+
+    &_box
+        display: flex
+        width: 100%
+
+        &_item
+            position: relative
+            width: 370px
+            height: 211px
+            margin-right: 40px
+            margin-top: 80px
+            display: inline-block
+
+            &_name
+                width: 370px
+                height: 92px
+                border-radius: 10px
+                background-color:#222831
+                text-align: center
+                line-height: 90px
+                +montserratBold
+                font-size: 28px
+            &_body
+                width: 370px
+                height: 278px
+                border-radius: 10px
+                background-color: rgba(34, 40, 49, 0.05)
+                margin-top: 30px
+            &_body img
+                display: block
+                margin: auto
+                padding-top: 30px
+
+            &_body span
+                display: block
+                color: #222831
+                margin: 30px 15px 0 15px
+                font-size: 18px
+                line-height: 30px
+                +montserratMedium
+                text-align: center

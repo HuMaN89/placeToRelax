@@ -1,0 +1,73 @@
+.reviews
+    background-color: $text-color
+    height: 720px
+
+    h3 
+        display: block
+        text-align: center
+        width: 780px
+        +montserratBold
+        font-size: 32px
+        color: #222831
+        margin: auto 
+        padding-top: 100px
+    
+    &_box
+        display: flex
+        width: 100%
+
+        &_item
+            position: relative
+            width: 370px
+            height: 211px
+            margin-right: 40px
+            margin-top: 80px
+            display: inline-block
+
+            &_info
+              position: relative
+              width: 204px
+              height: 70px
+              margin: auto
+            &_avatar
+              position: absolute
+              top: 0
+              left: 0
+              width: 70px
+              height: 70px
+            &_name
+              position: absolute
+              top: 10px
+              left: 90px
+              color: #222831
+              font-size: 20px
+              +montserratBold
+            &_position
+              position: absolute
+              top: 40px
+              left: 90px
+              color: #7a7e83
+              +openSansRegular
+              font-size: 16px
+            &_text
+              position: absolute
+              left: 70px
+              top: 110px
+              width: 230px
+              height: 70px
+              color: #7a7e83
+              +openSansRegular
+              text-align: center
+              font-size: 16px
+              line-height: 24px
+
+            &_left
+              position: absolute
+              left: 0
+              top: 70px
+            &_right
+              
+              position: absolute
+              right: 0
+              top: 70px
+              

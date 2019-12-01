@@ -1,6 +1,8 @@
 .advantage
     background-color: $background-color
 
+.advantages1
+    display: none
 .advantages
     position: relative
     height: 264px
@@ -47,3 +49,75 @@
 .line3
     margin-left: 130px
 
+@media (max-width: 1199px)
+    .advantage
+        &_block span 
+            width: 220px
+        &_lines
+            width: 100%
+            &_line
+                width: 110px
+
+    .line2
+        margin-left: 120px
+
+    .line3
+        margin-left: 130px
+
+@media (max-width: 968px)
+    .advantage
+        &_block span 
+            width: 160px
+        &_lines
+            width: 100%
+            &_line
+                width: 50px
+                margin-left: 20%
+
+    .line2
+        margin-left: 20%
+
+    .line3
+        margin-left: 18%
+
+@media (max-width: 500px)
+    .advantages
+        display: none
+
+    .advantages1
+        display: block
+        position: relative
+        background-color: $text-color
+        width: 100%
+        height: 239px
+        &_img
+            display: block
+            width: 80px
+            height: 80px
+            margin: auto
+            margin-top: 100px
+        &_text
+            display: block
+            width: 226px
+            height: 44px
+            margin: auto
+            margin-top: 50px
+            text-align: center
+            opacity: 0.6
+            color: #222831
+            +openSansRegular
+            font-size: 16px
+
+        &_line
+            display: block
+            position: absolute
+            width: 30%
+            height: 0
+            border: 2px solid #d4d4d4
+
+        &_line__l
+            top: 40px
+            left: 0
+        &_line__r
+            top: 40px
+            right: 0
