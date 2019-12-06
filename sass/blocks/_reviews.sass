@@ -1,75 +1,78 @@
 .reviews
-    background-color: $text-color
-    height: 500px
-
-    h3 
-        display: block
-        text-align: center
-        width: 780px
-        +montserratBold
-        font-size: 32px
-        color: #222831
-        margin: auto 
-        padding-top: 100px
+  background-color: $text-color
+  height: 500px
+  h3 
+    display: block
+    text-align: center
+    width: 780px
+    +montserratBold
+    font-size: 32px
+    color: #222831
+    margin: auto 
+    padding-top: 100px
     
-    &_box
+  &_box
+    display: flex
+    width: 100%
+    overflow: hidden
+
+    &_item
+      position: relative
+      width: 370px
+      height: 211px
+      margin-right: 40px
+      margin-top: 80px
+      display: inline-block
+      &_info
+        position: relative
+        width: 204px
+        height: 70px
+        margin: auto
+      &_avatar
+        position: absolute
+        top: 0
+        left: 0
+        width: 70px
+        height: 70px
+      &_name
+        position: absolute
+        top: 10px
+        left: 90px
+        color: #222831
+        font-size: 20px
+        +montserratBold
+      &_position
+        position: absolute
+        top: 40px
+        left: 90px
+        color: #7a7e83
+        +openSansRegular
+        font-size: 16px
+      &_section
         display: flex
         width: 100%
-
-        &_item
-            position: relative
-            width: 370px
-            height: 211px
-            margin-right: 40px
-            margin-top: 80px
-            display: inline-block
-
-            &_info
-              position: relative
-              width: 204px
-              height: 70px
-              margin: auto
-            &_avatar
-              position: absolute
-              top: 0
-              left: 0
-              width: 70px
-              height: 70px
-            &_name
-              position: absolute
-              top: 10px
-              left: 90px
-              color: #222831
-              font-size: 20px
-              +montserratBold
-            &_position
-              position: absolute
-              top: 40px
-              left: 90px
-              color: #7a7e83
-              +openSansRegular
-              font-size: 16px
-            &_text
-              position: absolute
-              left: 70px
-              top: 110px
-              width: 230px
-              height: 70px
-              color: #7a7e83
-              +openSansRegular
-              text-align: center
-              font-size: 16px
-              line-height: 24px
-
-            &_left
-              position: absolute
-              left: 0
-              top: 70px
-            &_right
-              
-              position: absolute
-              right: 0
-              top: 70px
+        height: 140px
+        justify-content: space-around
+        align-items: end
+      &_text
+        display: inline-block
+        width: 230px
+        height: 70px
+        margin-top: 25px
+        color: #7a7e83
+        +openSansRegular
+        text-align: center
+        font-size: 16px
+        line-height: 24px
+      &_left
+        display: inline-block
+        left: 0
+        top: 70px
+      &_right
+        display: inline-block
+        
+        right: 0
+        top: 70px
               
 
 
@@ -79,14 +82,6 @@
 
 
 
-  
-@media (max-width: 1199px)
-  .reviews
-      &_box
-          &_item
-              &_text
-                position: absolute
-                left: 20px
 
 
 
@@ -98,15 +93,6 @@
 
 
 
-@media (max-width: 968px)
-  .reviews
-    &_box
-        &_item
-            &_text
-              position: absolute
-              top: 100px
-              width: 180px
-              font-size: 12px
 
 
 
@@ -116,8 +102,8 @@
 @media (max-width: 768px)
 
   .reviews
-      h3 
-          width: 100%
+    h3 
+      width: 100%
       
 
     
@@ -129,75 +115,16 @@
 
 @media (max-width: 500px)
   .reviews
-    background-color: $text-color
     height: 425px
-
     h3 
-        width: 100%
-        font-size: 24px
-        padding-top: 60px
-    
+      width: 100%
+      font-size: 24px
+      padding-top: 60px
     &_box
-        display: block
+      display: block
+      width: 100%
+      height: 280px
+      &_item
         width: 100%
-        height: 280px
-
-        &_item
-            position: relative
-            width: 100%
-            height: 211px
-            margin-right: 40px
-            margin-top: 40px
-            display: inline-block
-
-            &_info
-              position: relative
-              width: 204px
-              height: 70px
-              margin: auto
-            &_avatar
-              position: absolute
-              top: 0
-              left: 0
-              width: 70px
-              height: 70px
-            &_name
-              position: absolute
-              top: 10px
-              left: 90px
-              color: #222831
-              font-size: 20px
-              +montserratBold
-            &_position
-              position: absolute
-              top: 40px
-              left: 90px
-              color: #7a7e83
-              +openSansRegular
-              font-size: 16px
-            &_text
-              position: absolute
-              left: 20%
-              top: 110px
-              width: 230px
-              height: 70px
-              color: #7a7e83
-              +openSansRegular
-              text-align: center
-              font-size: 16px
-              line-height: 24px
-              
-              top: 100px
-              width: 180px
-              font-size: 12px
-
-            &_left
-              position: absolute
-              left: 0
-              top: 60px
-            &_right
-              
-              position: absolute
-              right: 0
-              top: 60px
-              
+        margin-right: 40px
+        margin-top: 40px
