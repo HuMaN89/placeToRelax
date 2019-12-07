@@ -26,7 +26,6 @@
         color: #222831
         +montserratBold
         width: 383px
-        height: 40px
         margin: 0
         padding: 0
         font-size: 32px
@@ -34,27 +33,26 @@
         display: block
         color: #222831
         width: 384px
-        height: 36px
         +montserratMedium
         font-size: 28px
     &_text
         display: flex
         color: #222831
+        justify-content: space-around
+        align-content: center
         margin-top: 40px
         width: 524px
-        height: 28px
         color: #222831
         +openSansRegular
         font-size: 20px
         font-weight: 400
 
     &_text img
-        display: inline-block
+        align-self: center
         width: 21px
         height: 14px
         margin-top: 6px
     &_text span
-        display: inline-block
         width: 524px
         margin-left: 15px
         color: #222831
@@ -120,21 +118,19 @@
 @media (max-width: 500px)
     .help
         &_box
-            padding-top: 50px
-            height: 1050px
+            padding-top: 0
+            height: 900px
         &_foto
-            margin-top: -1100px
+            margin-top: -1050px
         &_info
             width: 100%
             height: 1195px
-            margin-top: 60px
+            margin-top: 25px
             margin-left: 0
             padding-left: 30px
         &_text
             margin-left: -35px
             margin-top: 10px
             width: 110%
-            height: 80px
-        
         &_text span
             width: 100%
